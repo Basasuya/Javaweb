@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default" extends="struts-default" namespace="/" >
+		<action name="AdminGo" class="com.action.AdminManager">
+			<result name="input">/Login.jsp</result>
+			<result name="success">/Index.jsp</result>
+		</action>
+		
+		<action name="ProfitManager" class="com.action.ProfitManager">
+			<result name="success">/ProfitManager.jsp</result>
+		</action>
+		<action name="ProfitUpdate" class="com.action.ProfitUpdate">
+		    <result name="success">/ProfitUpdate.jsp</result>
+		</action>
+		<action name="ProfitUpdateSave" class="com.action.ProfitUpdateSave">
+		</action>
+		<action name="ProfitDel" class="com.action.ProfitDel">
+		  <result name="success" type="chain">ProfitManager</result>
+		</action>
+		
+		<action name="AdrecordManager" class="com.action.AdrecordManager">
+			<result name="success">/AdrecordManager.jsp</result>
+		</action>
+		<action name="AdrecordUpdate" class="com.action.AdrecordUpdate">
+		    <result name="success">/AdrecordUpdate.jsp</result>
+		</action>
+		<action name="AdrecordUpdateSave" class="com.action.AdrecordUpdateSave">
+		</action>
+		<action name="AdrecordDel" class="com.action.AdrecordDel">
+		  <result name="success" type="chain">AdrecordManager</result>
+		</action>
+		
+		
+		<action name="GoodsManager" class="com.action.GoodsManager">
+			<result name="success">/GoodsManager.jsp</result>
+		</action>
+		<action name="GoodsUpdate" class="com.action.GoodsUpdate">
+		    <result name="success">/GoodsUpdate.jsp</result>
+		</action>
+		<action name="GoodsUpdateSave" class="com.action.GoodsUpdateSave">
+		</action>
+		<action name="GoodsAddSave" class="com.action.GoodsAddSave">
+		</action>
+		<action name="GoodsDel" class="com.action.GoodsDel">
+		  <result name="success" type="chain">GoodsManager</result>
+		</action>
+		<action name="BoodsManager" class="com.action.BoodsManager">
+			<result name="success">/BoodsManager.jsp</result>
+		</action>
+		<action name="BoodsUpdate" class="com.action.BoodsUpdate">
+		    <result name="success">/BoodsUpdate.jsp</result>
+		</action>
+		<action name="BoodsUpdateSave" class="com.action.BoodsUpdateSave">
+		</action>
+		<action name="BoodsAddSave" class="com.action.BoodsAddSave">
+		</action>
+		<action name="BoodsDel" class="com.action.BoodsDel">
+		  <result name="success" type="chain">GoodsManager</result>
+		</action>
+		
+		<action name="GStockManager" class="com.action.GStockManager">
+			<result name="success">/GStockManager.jsp</result>
+		</action>
+		<action name="GStockUpdate" class="com.action.GStockUpdate">
+		    <result name="success">/GStockUpdate.jsp</result>
+		</action>
+		<action name="GStockUpdateSave" class="com.action.GStockUpdateSave">
+		</action>
+		<action name="GStockAddSave" class="com.action.GStockAddSave">
+		</action>
+		<action name="GStockDel" class="com.action.GStockDel">
+		  <result name="success" type="chain">GStockManager</result>
+		</action>
+		<action name="BStockManager" class="com.action.BStockManager">
+			<result name="success">/BStockManager.jsp</result>
+		</action>
+		<action name="BStockUpdate" class="com.action.BStockUpdate">
+		    <result name="success">/BStockUpdate.jsp</result>
+		</action>
+		<action name="BStockUpdateSave" class="com.action.BStockUpdateSave">
+		</action>
+		<action name="BStockAddSave" class="com.action.BStockAddSave">
+		</action>
+		<action name="BStockDel" class="com.action.BStockDel">
+		  <result name="success" type="chain">GStockManager</result>
+		</action>
+		
+		<action name="GBuyManager" class="com.action.GBuyManager">
+			<result name="success">/GBuyManager.jsp</result>
+		</action>
+		<action name="GBuyUpdate" class="com.action.GBuyUpdate">
+		    <result name="success">/GBuyUpdate.jsp</result>
+		</action>
+		<action name="GBuyUpdateSave" class="com.action.GBuyUpdateSave">
+		</action>
+		<action name="GBuyAddSave" class="com.action.GBuyAddSave">
+		</action>
+		<action name="GBuyDel" class="com.action.GBuyDel">
+		  <result name="success" type="chain">GBuyManager</result>
+		</action>
+		<action name="BBuyManager" class="com.action.BBuyManager">
+			<result name="success">/BBuyManager.jsp</result>
+		</action>
+		<action name="BBuyUpdate" class="com.action.BBuyUpdate">
+		    <result name="success">/BBuyUpdate.jsp</result>
+		</action>
+		<action name="BBuyUpdateSave" class="com.action.BBuyUpdateSave">
+		</action>
+		<action name="BBuyAddSave" class="com.action.BBuyAddSave">
+		</action>
+		<action name="BBuyDel" class="com.action.BBuyDel">
+		  <result name="success" type="chain">GBuyManager</result>
+		</action>
+		
+		<action name="GReturnManager" class="com.action.GReturnManager">
+			<result name="success">/GReturnManager.jsp</result>
+		</action>
+		<action name="GReturnUpdate" class="com.action.GReturnUpdate">
+		    <result name="success">/GReturnUpdate.jsp</result>
+		</action>
+		<action name="GReturnUpdateSave" class="com.action.GReturnUpdateSave">
+		</action>
+		<action name="GReturnAddSave" class="com.action.GReturnAddSave">
+		</action>
+		<action name="GReturnDel" class="com.action.GReturnDel">
+		  <result name="success" type="chain">GReturnManager</result>
+		</action>
+		<action name="BReturnManager" class="com.action.BReturnManager">
+			<result name="success">/BReturnManager.jsp</result>
+		</action>
+		<action name="BReturnUpdate" class="com.action.BReturnUpdate">
+		    <result name="success">/BReturnUpdate.jsp</result>
+		</action>
+		<action name="BReturnUpdateSave" class="com.action.BReturnUpdateSave">
+		</action>
+		<action name="BReturnAddSave" class="com.action.BReturnAddSave">
+		</action>
+		<action name="BReturnDel" class="com.action.BReturnDel">
+		  <result name="success" type="chain">GReturnManager</result>
+		</action>
+		
+		<action name="GUpManager" class="com.action.GUpManager">
+			<result name="success">/GUpManager.jsp</result>
+		</action>
+		<action name="GUpUpdate" class="com.action.GUpUpdate">
+		    <result name="success">/GUpUpdate.jsp</result>
+		</action>
+		<action name="GUpUpdateSave" class="com.action.GUpUpdateSave">
+		</action>
+		<action name="GUpAddSave" class="com.action.GUpAddSave">
+		</action>
+		<action name="GUpDel" class="com.action.GUpDel">
+		  <result name="success" type="chain">GUpManager</result>
+		</action>
+		<action name="BUpManager" class="com.action.BUpManager">
+			<result name="success">/BUpManager.jsp</result>
+		</action>
+		<action name="BUpUpdate" class="com.action.BUpUpdate">
+		    <result name="success">/BUpUpdate.jsp</result>
+		</action>
+		<action name="BUpUpdateSave" class="com.action.BUpUpdateSave">
+		</action>
+		<action name="BUpAddSave" class="com.action.BUpAddSave">
+		</action>
+		<action name="BUpDel" class="com.action.BUpDel">
+		  <result name="success" type="chain">GUpManager</result>
+		</action>
+		
+		<action name="GDownManager" class="com.action.GDownManager">
+			<result name="success">/GDownManager.jsp</result>
+		</action>
+		<action name="GDownUpdate" class="com.action.GDownUpdate">
+		    <result name="success">/GDownUpdate.jsp</result>
+		</action>
+		<action name="GDownUpdateSave" class="com.action.GDownUpdateSave">
+		</action>
+		<action name="GDownAddSave" class="com.action.GDownAddSave">
+		</action>
+		<action name="GDownDel" class="com.action.GDownDel">
+		  <result name="success" type="chain">GDownManager</result>
+		</action>
+		<action name="BDownManager" class="com.action.BDownManager">
+			<result name="success">/BDownManager.jsp</result>
+		</action>
+		<action name="BDownUpdate" class="com.action.BDownUpdate">
+		    <result name="success">/BDownUpdate.jsp</result>
+		</action>
+		<action name="BDownUpdateSave" class="com.action.BDownUpdateSave">
+		</action>
+		<action name="BDownAddSave" class="com.action.BDownAddSave">
+		</action>
+		<action name="BDownDel" class="com.action.BDownDel">
+		  <result name="success" type="chain">GDownManager</result>
+		</action>
+		
+	</package>
+</struts>    
